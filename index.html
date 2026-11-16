@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>薪火·征途——长征精神沉浸式数字艺术馆</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238B1E24'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23C6A36B' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23C6A36B'/%3E%3C/svg%3E" />
     <meta name="description" content="国家级水准长征精神沉浸式数字艺术馆，集电影级叙事、互动长征地图、岁月长卷、文献展柜、重走征途互动剧情与精神试炼于一体的红色数字文化殿堂。" />
     <meta property="og:title" content="薪火·征途——长征精神沉浸式数字艺术馆" />
     <meta property="og:description" content="一束永不熄灭的信念之光。探寻红军长征壮阔史诗，传承薪火精神。" />
@@ -24,11 +25,23 @@
           <div class="boot-ring"></div>
           <p class="boot-title">影片即将开场</p>
           <p class="boot-sub">本站素材较多，网页正在加载，请稍候片刻即可进入。</p>
+          <p id="boot-retry" class="boot-retry" hidden>若长时间停留在本页，请刷新页面重试一次。</p>
           <div class="boot-line"></div>
         </div>
       </div>
     </div>
-    <style>#boot-loading{z-index:9999;text-align:center;color:#f5f0e6;background:radial-gradient(#1a1410 0%,#0d0f11 72%);justify-content:center;align-items:center;padding:0 32px;font-family:system-ui,Noto Serif SC,Microsoft YaHei,serif;display:flex;position:fixed;inset:0}.boot-frame{flex-direction:column;align-items:center;gap:22px;display:flex}.boot-ring{border:1px solid #c6a36b;border-color:#c6a36b #c6a36b99 #c6a36b38 #c6a36b38;border-radius:50%;width:54px;height:54px;animation:1.6s linear infinite bootspin}.boot-line{background:linear-gradient(90deg,#0000,#c6a36b,#0000);width:64px;height:1px}.boot-title{letter-spacing:.35em;text-indent:.35em;color:#e8d9b5;margin:0;font-size:22px;font-weight:600}.boot-sub{letter-spacing:.12em;color:#b9ac8e;margin:0;font-size:14px;line-height:1.9}@keyframes bootspin{to{transform:rotate(360deg)}}</style>
+    <style>#boot-loading{z-index:9999;text-align:center;color:#f5f0e6;background:radial-gradient(#1a1410 0%,#0d0f11 72%);justify-content:center;align-items:center;padding:0 32px;font-family:system-ui,Noto Serif SC,Microsoft YaHei,serif;display:flex;position:fixed;inset:0}.boot-frame{flex-direction:column;align-items:center;gap:22px;display:flex}.boot-ring{border:1px solid #c6a36b;border-color:#c6a36b #c6a36b99 #c6a36b38 #c6a36b38;border-radius:50%;width:54px;height:54px;animation:1.6s linear infinite bootspin}.boot-line{background:linear-gradient(90deg,#0000,#c6a36b,#0000);width:64px;height:1px}.boot-title{letter-spacing:.35em;text-indent:.35em;color:#e8d9b5;margin:0;font-size:22px;font-weight:600}.boot-sub{letter-spacing:.12em;color:#b9ac8e;margin:0;font-size:14px;line-height:1.9}.boot-retry{letter-spacing:.1em;color:#c6a36b;opacity:.85;margin:0;font-size:12px;line-height:1.8}@keyframes bootspin{to{transform:rotate(360deg)}}</style>
+    <script>
+      (function () {
+        var t = window.setTimeout(function () {
+          var el = document.getElementById('boot-retry');
+          if (el && document.getElementById('boot-loading')) { el.hidden = false; }
+        }, 12000);
+        window.addEventListener('load', function () {
+          if (!document.getElementById('boot-loading')) { window.clearTimeout(t); }
+        });
+      })();
+    </script>
   <script type="module" src="./assets/index-EXqwberq.js"></script>
   </body>
 </html>

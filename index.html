@@ -15,7 +15,13 @@
     
   </head>
   <body class="bg-[#121416] text-[#F5F0E6] antialiased selection:bg-[#8B1E24] selection:text-[#F5F0E6] overflow-x-clip min-h-screen">
-    <div id="root"></div>
+    <div id="root">
+      <div id="boot-loading">
+        <div class="boot-spinner"></div>
+        <p>该网页材料素材较多，首次加载较慢，请耐心等待；如果长时间不出现，请刷新该网页试试，感谢你的理解。</p>
+      </div>
+    </div>
+    <style>#boot-loading{z-index:9999;text-align:center;color:#f5f0e6;background:#121416;flex-direction:column;justify-content:center;align-items:center;gap:22px;padding:0 32px;font-family:system-ui,Noto Sans SC,Microsoft YaHei,sans-serif;display:flex;position:fixed;inset:0}.boot-spinner{border:3px solid #c6a36b38;border-top-color:#c6a36b;border-radius:50%;width:42px;height:42px;animation:1s linear infinite bootspin}@keyframes bootspin{to{transform:rotate(360deg)}}#boot-loading p{color:#d8cfbc;letter-spacing:.02em;max-width:440px;margin:0;font-size:15px;line-height:1.9}</style>
   <script src="./assets/index-BI9i7ptJ.js"></script>
   </body>
 </html>
